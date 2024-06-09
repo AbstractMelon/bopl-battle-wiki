@@ -47,8 +47,7 @@ body::before {
     background-color: #2099ee;
     border: solid 7px #125988;
     border-radius: 20px;
-    overflow:auto;
-    overflow-y:scroll;
+    overflow-y:auto;
 }
 
 header {
