@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Abilities",
+        "description":
+            "This is the first page of our Bopl Battle wiki.",
+        "link": "/wiki/page1"
+    },
+    {
+        "title": "Page 2",
+        "description":
+            "This page contains information about various Bopl Battle strategies.",
+        "link": "/wiki/page2"
+    },
+    {
+        "title": "Page 3",
+        "description":
+            "Find out more about the Bopl Battle characters on this page.",
+        "link": "/wiki/page3"
+    }
+]

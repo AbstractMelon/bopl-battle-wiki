@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Main";
+    src: url("/fonts/archrivalbold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Secondary";
+    src: url("/fonts/archrival.ttf") format("truetype");
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    perspective: 0.5px;
+    background-image: url("/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: translateZ(1px);
+    transition: background-position 0.3s;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 67, 87, 0.534); */
+    z-index: -1;
+    background-clip: 100%;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2099ee;
+    border: solid 7px #125988;
+    border-radius: 20px;
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    background-color: #2099ee;
+    border: solid 7px #125988;
+    padding: 20px 0;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 480px;
+    transform: translate(0px, 30px);
+}
+
+header .headerbar {
+    background-color: #2099ee;
+    border: solid 7px #125988;
+    padding: 20px 0;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 480px;
+    transform: translate(0px, 30px);
+}
+
+h1 {
+    font-family: "Main";
+    color: #fff;
+}
+
+h2 {
+    font-family: "Main";
+    font-size: 130;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: "Secondary";
+    text-align: center;
+}
+
+a {
+    color: #00ffe5;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #f89928;
+    border: solid 7px #915924;
+    color: #ffffff;
+    border-radius: 45px;
+    padding: 20px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.page-link {
+    display: block;
+    padding: 15px;
+    background-color: #2099ee;
+    border: 4px solid #125988;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition:
+        background-color 1s,
+        transform 1s;
+}
+
+.page-link:hover {
+    background-color: #f89928;
+    border-color: #915924;
+    transform: scale(1.05);
+}
+
+.page-link h2 {
+    font-family: "Main";
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.page-link p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Secondary";
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.footer-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer-icon-link {
+    text-decoration: none; 
+    color: inherit; 
+    margin: 0 5px;
+    padding: 0px;
+}
+
+.footer-icon-link:hover {
+    text-decoration: none; 
+    color: rgb(0, 132, 255); 
+    margin: 0 5px;
+    padding: 0px;
+    background-color: #ffffff00;
+    border: none; 
+}
+
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #2099ee; 
+    border: solid 7px #125988; 
+    border-radius: 20px; 
+    max-width: 480px; 
+    margin: auto;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    flex: 1;
+    background-color: transparent; 
+    color: #fff; 
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+
+.search-bar button {
+    margin: 1px;
+    background-color: #f89928;
+    border: solid 7px #915924;
+    color: #ffffff;
+    border-radius: 45px;
+    padding: 20px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.search-bar button:hover {
+    background-color: #f4770b
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #333 #555;
+}
+
+*::-moz-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+*::-moz-scrollbar-thumb:hover {
+    background-color: #777;
+}
