@@ -84,7 +84,7 @@ const Home: React.FC = () => {
                     </section>
                 </main>
             </div>
-            <footer className="footer">
+            <div className="footer">
                 <div className="footer-icons">
                     <a href="https://github.com/AbstractMelon/bopl-battle-wiki/wiki" className="footer-icon-link">
                         <FontAwesomeIcon icon={faEdit} className="footer-icon" />
@@ -93,7 +93,7 @@ const Home: React.FC = () => {
                         <FontAwesomeIcon icon={faBug} className="footer-icon" />
                     </a>
                 </div>
-            </footer>
+            </div>
         </div>
     );
 };
