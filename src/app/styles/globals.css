@@ -24,6 +24,8 @@ body {
     background-attachment: fixed;
     background-position: translateZ(1px);
     transition: background-position 0.3s;
+
+    /* overflow:hidden; */
 }
 
 body::before {
@@ -45,6 +47,7 @@ body::before {
     background-color: #2099ee;
     border: solid 7px #125988;
     border-radius: 20px;
+    overflow-y:auto;
 }
 
 header {
@@ -142,9 +145,9 @@ a:hover {
 }
 
 .footer {
-    position: sticky;
-    bottom: 0;
-    right: 0;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
     z-index: 1000;
 }
 
