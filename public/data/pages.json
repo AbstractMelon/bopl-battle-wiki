@@ -3,18 +3,18 @@
         "title": "Abilities",
         "description":
             "This is the first page of our Bopl Battle wiki.",
-        "link": "/wiki/page1"
+        "link": "/wiki/abilities"
     },
     {
-        "title": "Page 2",
+        "title": "How to play online!",
         "description":
-            "This page contains information about various Bopl Battle strategies.",
-        "link": "/wiki/page2"
+            "Teaches you how to play online!",
+        "link": "/wiki/how-to-play-online"
     },
     {
-        "title": "Page 3",
+        "title": "Discords",
         "description":
-            "Find out more about the Bopl Battle characters on this page.",
-        "link": "/wiki/page3"
+            "View all the many bopl discord servers!",
+        "link": "/wiki/discord-servers"
     }
 ]
