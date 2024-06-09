@@ -47,7 +47,7 @@ body::before {
     background-color: #2099ee;
     border: solid 7px #125988;
     border-radius: 20px;
-    overflow-y:auto;
+    overflow-y: auto;
 }
 
 header {
@@ -150,7 +150,7 @@ a:hover {
     z-index: 1000;
 }
 @media screen and (min-width: 600px) {
-    .footer{
+    .footer {
         position: fixed;
     }
 }
@@ -166,29 +166,29 @@ a:hover {
 }
 
 .footer-icon-link {
-    text-decoration: none; 
-    color: inherit; 
+    text-decoration: none;
+    color: inherit;
     margin: 0 5px;
     padding: 0px;
 }
 
 .footer-icon-link:hover {
-    text-decoration: none; 
-    color: rgb(0, 132, 255); 
+    text-decoration: none;
+    color: rgb(0, 132, 255);
     margin: 0 5px;
     padding: 0px;
     background-color: #ffffff00;
-    border: none; 
+    border: none;
 }
 
 .search-bar {
     margin-top: 20px;
     display: flex;
     align-items: center;
-    background-color: #2099ee; 
-    border: solid 7px #125988; 
-    border-radius: 20px; 
-    max-width: 480px; 
+    background-color: #2099ee;
+    border: solid 7px #125988;
+    border-radius: 20px;
+    max-width: 480px;
     margin: auto;
 }
 
@@ -197,10 +197,10 @@ a:hover {
     border: 1px solid #ccc;
     border-radius: 20px;
     flex: 1;
-    background-color: transparent; 
-    color: #fff; 
-    margin-right: 10px; 
-    margin-left: 10px; 
+    background-color: transparent;
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .search-bar button {
@@ -215,7 +215,7 @@ a:hover {
 }
 
 .search-bar button:hover {
-    background-color: #f4770b
+    background-color: #f4770b;
 }
 
 ::-webkit-scrollbar {
