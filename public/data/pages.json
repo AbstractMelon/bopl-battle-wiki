@@ -1,20 +1,17 @@
 [
     {
         "title": "Abilities",
-        "description":
-            "This is the first page of our Bopl Battle wiki.",
+        "description": "This is the first page of our Bopl Battle wiki.",
         "link": "/wiki/abilities"
     },
     {
         "title": "How to play online!",
-        "description":
-            "Teaches you how to play online!",
+        "description": "Teaches you how to play online!",
         "link": "/wiki/how‐to‐play‐online"
     },
     {
         "title": "Discords",
-        "description":
-            "View all the many bopl discord servers!",
+        "description": "View all the many bopl discord servers!",
         "link": "/wiki/discord‐servers"
     }
 ]

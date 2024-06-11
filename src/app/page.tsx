@@ -2,7 +2,12 @@
 
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBug, faEdit, faSearch, faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
+import {
+    faBug,
+    faEdit,
+    faSearch,
+    faExclamationTriangle,
+} from "@fortawesome/free-solid-svg-icons";
 
 interface Page {
     title: string;
@@ -10,7 +15,9 @@ interface Page {
     description: string;
 }
 
-const SearchBar: React.FC<{ onSearch: (query: string) => void }> = ({ onSearch }) => {
+const SearchBar: React.FC<{ onSearch: (query: string) => void }> = ({
+    onSearch,
+}) => {
     const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
         const query = e.target.value;
         onSearch(query);
@@ -49,8 +56,8 @@ const Home: React.FC = () => {
 
     const handleSearch = (query: string) => {
         setSearchQuery(query);
-        const filtered = pages.filter(page =>
-            page.title.toLowerCase().includes(query.toLowerCase())
+        const filtered = pages.filter((page) =>
+            page.title.toLowerCase().includes(query.toLowerCase()),
         );
         setFilteredPages(filtered);
     };
@@ -65,7 +72,26 @@ const Home: React.FC = () => {
                 <br />
                 <div>
                     <h1>Overview</h1>
-                    <p>Bopl Battle is a couch/online platform fighter game focused around battling your friends and combining unique and wild abilities together. There are many choices such as a <a href="Abilities#Shrink Ray">Shrink Ray</a>, creating <a href="Abilities#Black Hole">Black Holes</a>, <a href="Abilities#Time Stop">stopping time</a>, and attaching a <a href="Abilities#Engine">rocket engine</a> to the stage to send it flying. With just under twenty thousand unique combinations, you will never run out of ways to kill your friends (and yourself) within this game. (If you feel creative, or, rather, the opposite, visit <a href="Combos">Combos</a> to create or read combos). The whole game is built around the synergy of different combos of abilities and the usage of surroundings and the <a href="Maps">map</a>. The game gets another layer of depth when playing in teams and combining combos with your teammates.</p>
+                    <p>
+                        Bopl Battle is a couch/online platform fighter game
+                        focused around battling your friends and combining
+                        unique and wild abilities together. There are many
+                        choices such as a{" "}
+                        <a href="Abilities#Shrink Ray">Shrink Ray</a>, creating{" "}
+                        <a href="Abilities#Black Hole">Black Holes</a>,{" "}
+                        <a href="Abilities#Time Stop">stopping time</a>, and
+                        attaching a <a href="Abilities#Engine">rocket engine</a>{" "}
+                        to the stage to send it flying. With just under twenty
+                        thousand unique combinations, you will never run out of
+                        ways to kill your friends (and yourself) within this
+                        game. (If you feel creative, or, rather, the opposite,
+                        visit <a href="Combos">Combos</a> to create or read
+                        combos). The whole game is built around the synergy of
+                        different combos of abilities and the usage of
+                        surroundings and the <a href="Maps">map</a>. The game
+                        gets another layer of depth when playing in teams and
+                        combining combos with your teammates.
+                    </p>
                 </div>
                 <SearchBar onSearch={handleSearch} />
                 <br />
@@ -86,10 +112,19 @@ const Home: React.FC = () => {
             </div>
             <div className="footer">
                 <div className="footer-icons">
-                    <a href="https://github.com/AbstractMelon/bopl-battle-wiki/wiki" className="footer-icon-link">
-                        <FontAwesomeIcon icon={faEdit} className="footer-icon" />
+                    <a
+                        href="https://github.com/AbstractMelon/bopl-battle-wiki/wiki"
+                        className="footer-icon-link"
+                    >
+                        <FontAwesomeIcon
+                            icon={faEdit}
+                            className="footer-icon"
+                        />
                     </a>
-                    <a href="https://github.com/AbstractMelon/bopl-battle-wiki/issues" className="footer-icon-link">
+                    <a
+                        href="https://github.com/AbstractMelon/bopl-battle-wiki/issues"
+                        className="footer-icon-link"
+                    >
                         <FontAwesomeIcon icon={faBug} className="footer-icon" />
                     </a>
                 </div>
