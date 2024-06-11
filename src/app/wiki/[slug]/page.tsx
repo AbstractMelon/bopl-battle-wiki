@@ -22,7 +22,7 @@ async function WikiPage({ params }: WikiPageProps) {
                         <h1>Bopl Wiki!</h1>
                         <nav className="navbar">
                             <ul>
-                                <li><a href="/home">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li><a href="/pages">All pages</a></li>
                                 <li><a href="/articles">Report Bug</a></li>
                                 <li><a href="/about">Edit</a></li>
