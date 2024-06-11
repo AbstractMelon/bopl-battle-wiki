@@ -26,8 +26,10 @@ export default function RootLayout({
           minimum-scale=1.0"
                 />
             </head>
-            <body className={inter.className}>{children}</body>
-            <Analytics />
+            <body className={inter.className}>
+                {children}
+                <Analytics/>
+            </body>
         </html>
     );
 }
