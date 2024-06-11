@@ -65,34 +65,53 @@ const Home: React.FC = () => {
     return (
         <div>
             <div className="container">
+                    <div className="page-header">
+                        <h1>Bopl Wiki!</h1>
+                        <nav className="page-header-navbar">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/pages">All pages</a></li>
+                                <li><a href="https://github.com/AbstractMelon/bopl-battle-wiki/issues">Report Bug</a></li>
+                                <li><a href="https://github.com/AbstractMelon/bopl-battle-wiki/wiki">Edit</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            <div className="container">
+                {/*
                 <header className="header">
                     <h1>Welcome to the Bopl Battle Wiki</h1>
                 </header>
+
                 <br />
                 <br />
+                 */}
                 <div>
-                    <h1>Overview</h1>
-                    <p>
-                        Bopl Battle is a couch/online platform fighter game
-                        focused around battling your friends and combining
-                        unique and wild abilities together. There are many
-                        choices such as a{" "}
-                        <a href="Abilities#Shrink Ray">Shrink Ray</a>, creating{" "}
-                        <a href="Abilities#Black Hole">Black Holes</a>,{" "}
-                        <a href="Abilities#Time Stop">stopping time</a>, and
-                        attaching a <a href="Abilities#Engine">rocket engine</a>{" "}
-                        to the stage to send it flying. With just under twenty
-                        thousand unique combinations, you will never run out of
-                        ways to kill your friends (and yourself) within this
-                        game. (If you feel creative, or, rather, the opposite,
-                        visit <a href="Combos">Combos</a> to create or read
-                        combos). The whole game is built around the synergy of
-                        different combos of abilities and the usage of
-                        surroundings and the <a href="Maps">map</a>. The game
-                        gets another layer of depth when playing in teams and
-                        combining combos with your teammates.
-                    </p>
+                    <div className="markdown-body">
+                        <h1>Overview</h1>
+                        <p>
+                            Bopl Battle is a couch/online platform fighter game
+                            focused around battling your friends and combining
+                            unique and wild abilities together. There are many
+                            choices such as a{" "}
+                            <a href="Abilities#Shrink Ray">Shrink Ray</a>, creating{" "}
+                            <a href="Abilities#Black Hole">Black Holes</a>,{" "}
+                            <a href="Abilities#Time Stop">stopping time</a>, and
+                            attaching a <a href="Abilities#Engine">rocket engine</a>{" "}
+                            to the stage to send it flying. With just under twenty
+                            thousand unique combinations, you will never run out of
+                            ways to kill your friends (and yourself) within this
+                            game. (If you feel creative, or, rather, the opposite,
+                            visit <a href="Combos">Combos</a> to create or read
+                            combos). The whole game is built around the synergy of
+                            different combos of abilities and the usage of
+                            surroundings and the <a href="Maps">map</a>. The game
+                            gets another layer of depth when playing in teams and
+                            combining combos with your teammates.
+                        </p>
+                    </div>
                 </div>
+                <br></br>
                 <SearchBar onSearch={handleSearch} />
                 <br />
                 <main>
@@ -110,6 +129,7 @@ const Home: React.FC = () => {
                     </section>
                 </main>
             </div>
+            {/*
             <div className="footer">
                 <div className="footer-icons">
                     <a
@@ -129,6 +149,7 @@ const Home: React.FC = () => {
                     </a>
                 </div>
             </div>
+            */}
         </div>
     );
 };

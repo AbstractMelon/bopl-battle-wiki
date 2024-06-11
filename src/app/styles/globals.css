@@ -52,14 +52,14 @@ body::before {
 
 header {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 40px;
     background-color: #2099ee;
     border: solid 7px #125988;
-    padding: 20px 0;
+    padding: 40px 0;
     border-radius: 20px;
     margin: auto;
-    max-width: 480px;
+    max-width: 700px;
     transform: translate(0px, 30px);
 }
 
@@ -145,19 +145,19 @@ a:hover {
 }
 
 .footer {
+    position: fixed;
     bottom: 30px;
     left: 0;
-    z-index: 1000;
-}
-@media screen and (min-width: 600px) {
-    .footer {
-        position: fixed;
-    }
+    width: 100%;
+    z-index: 1000; 
 }
 
 .footer-icons {
     display: flex;
-    align-items: center;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+    padding: 10px 0;
 }
 
 .footer-icon {
@@ -169,17 +169,23 @@ a:hover {
     text-decoration: none;
     color: inherit;
     margin: 0 5px;
-    padding: 0px;
+    padding: 0;
 }
 
 .footer-icon-link:hover {
     text-decoration: none;
     color: rgb(0, 132, 255);
     margin: 0 5px;
-    padding: 0px;
-    background-color: #ffffff00;
+    padding: 0;
+    background-color: transparent;
     border: none;
 }
+
+@media screen and (min-width: 600px) {
+    .footer {
+    }
+}
+
 
 .search-bar {
     margin-top: 20px;
@@ -194,8 +200,8 @@ a:hover {
 
 .search-bar input[type="text"] {
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 20px;
+    outline: none;
     flex: 1;
     background-color: transparent;
     color: #fff;
@@ -214,7 +220,7 @@ a:hover {
     padding-bottom: 10px;
 }
 
-.search-bar button:hover {
+.search-bar button:hover {  
     background-color: #f4770b;
 }
 
@@ -250,21 +256,18 @@ a:hover {
 }
 
 
-.header {
+.page-header {
     color: #fff;
     text-align: center;
     position: relative;
 }
 
-.header h1 {
+.page-header h1 {
     margin: 0;
     font-size: 2em;
 }
 
-.navbar {
-}
-
-.navbar ul {
+.page-header-navbar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -272,17 +275,17 @@ a:hover {
     justify-content: center;
 }
 
-.navbar ul li {
+.page-header-navbar ul li {
     margin: 0 15px;
 }
 
-.navbar ul li a {
+.page-header-navbar ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1em;
     transition: color 0.3s;
 }
 
-.navbar ul li a:hover {
+.page-header-navbar ul li a:hover {
     color: #ddd;
 }

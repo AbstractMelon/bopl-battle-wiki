@@ -2,6 +2,11 @@ import { remark } from "remark";
 import html from "remark-html";
 import matter from "gray-matter";
 import { getWikiPage } from "../../../lib/github";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faBug,
+    faEdit,
+} from "@fortawesome/free-solid-svg-icons";
 
 interface WikiPageProps {
     params: { slug: string };
@@ -18,9 +23,9 @@ async function WikiPage({ params }: WikiPageProps) {
     return (
         <div>
             <div className="container">
-                    <div className="header">
+                    <div className="page-header">
                         <h1>Bopl Wiki!</h1>
-                        <nav className="navbar">
+                        <nav className="page-header-navbar">
                             <ul>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/pages">All pages</a></li>
@@ -40,6 +45,25 @@ async function WikiPage({ params }: WikiPageProps) {
                     <div className="markdown-body">
                         <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
                     </div>
+                </div>
+            </div>
+            <div className="footer">
+                <div className="footer-icons">
+                    <a
+                        href="https://github.com/AbstractMelon/bopl-battle-wiki/wiki"
+                        className="footer-icon-link"
+                    >
+                        <FontAwesomeIcon
+                            icon={faEdit}
+                            className="footer-icon"
+                        />
+                    </a>
+                    <a
+                        href="https://github.com/AbstractMelon/bopl-battle-wiki/issues"
+                        className="footer-icon-link"
+                    >
+                        <FontAwesomeIcon icon={faBug} className="footer-icon" />
+                    </a>
                 </div>
             </div>
         </div>
